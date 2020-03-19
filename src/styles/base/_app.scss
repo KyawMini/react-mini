@@ -1,0 +1,28 @@
+#noop{ display: none }
+
+.header {
+    background-color: $color-primary-light;
+    height: 7rem;
+    display: flex;
+    box-shadow: $shadow-light;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background-color: $color-primary-light;
+    flex: 0 0 19%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.side-content {
+    flex: 1;
+}

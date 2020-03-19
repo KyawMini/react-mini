@@ -1,0 +1,52 @@
+.form {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__group {
+        margin-bottom: 1.5rem;
+    }
+
+    &__error {
+        font-size: inherit;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 1rem;
+        display: block;
+        text-transform: uppercase;
+        color: $color-red-light;
+    }
+
+    &__label {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #FFF;
+        margin-left: 1rem;
+        margin-top: .7rem;
+        text-transform: uppercase;
+        display: block;
+    }
+
+    &__input {
+        font-size: 1.5rem;
+        font-family: inherit;
+        color: $color-Grey-dark-2;
+        padding: 1.5rem 2rem;
+        border: none;
+        border-radius: 5px;
+        background-color: $color-Grey-light-1;
+        width: 100%;
+        display: block;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba(0,0,0, .3);
+            border-bottom: 3px solid $color-green-light;
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid $color-red-light;
+        }
+    }
+}
